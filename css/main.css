@@ -66,6 +66,10 @@ a {
   font-size: 12px;
 }
 
+.services-wrapper, .company-info, .about, .portfolio {
+  width: 95%;
+}
+
 .logo-wrapper {
   margin: 0 auto;
   text-align: center;
@@ -78,12 +82,55 @@ a {
 
 .company-info {
   text-align: center;
-  margin-top: 100px;
+  padding-top: 100px;
+  margin: 0 auto;
 }
 
+p {
+  line-height: 30px;
+  font-weight: 300;
+}
 
+.about {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
 
+.services-wrapper {
+  padding: 50px 0px;
+  margin: 0 auto;
+}
 
+.service {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+h5 {
+  font-size: 14px;
+  margin: 6px 0px 18px 0px;
+}
+
+.service-info {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.portfolio {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.portfolio-item {
+  width: 40px;
+  padding: 20px
+}
+
+.portfolio-row {
+  padding: 10px 0px;
+}
 
 
 /* ==========================================================================
@@ -214,4 +261,42 @@ a {
   h3 {
     page-break-after: avoid;
   }
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0; 
+  -webkit-animation:fadeIn ease-in 1; 
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards; 
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  animation-delay: 1.3s;
 }
